@@ -18,6 +18,6 @@ int binary_tree_balance(const binary_tree_t *tree)
 	if (tree->right)
 		rheight = binary_tree_balance(tree->right) + 1;
 
-	return (rheight - lheight);
+	return (lheight - rheight);
 }
 
